@@ -1,4 +1,4 @@
-
+student@guithi0777-server:~/ansible-test$ cat ansible/playbooks/recette.yml
 ---
 name: Deploy Ansible playbooks
 on: 
@@ -18,4 +18,4 @@ jobs:
 
        - name: copy ansible file
          run: |
-           ansible-playbook -i etc/hosts ansible/playbooks/recette.yml
+           rsync -av -P ansible /home/student ansible-playbook -i etc/hosts ansible/playbooks/recette.yml
