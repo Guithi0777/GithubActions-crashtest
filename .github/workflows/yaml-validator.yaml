@@ -1,7 +1,12 @@
 
 ---
 name: Deploy Ansible playbooks
-on: push
+on: 
+   push:
+      branches:
+
+           - main 
+
 jobs:
   run-ansible:
    runs-on: self-hosted
