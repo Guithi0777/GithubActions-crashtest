@@ -1,0 +1,22 @@
+---
+name: Deploy Ansible playbooks
+on: 
+ push:
+      
+   branches:
+
+
+         - main  
+
+jobs:
+  run-ansible:
+   runs-on: self-hosted
+   
+   steps:
+   
+       - name: Check Out Repository
+         uses: actions/checkout@v4
+
+       - name: copy ansible file
+         run: |
+           rsync -av -P ansible /home/student/ansible/playbook -i etc/hosts /home/student/actions-runner2/ansible/playbooks/recette.yml
