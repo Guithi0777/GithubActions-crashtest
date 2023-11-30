@@ -5,7 +5,7 @@ on:
       
     branches:
 
-           - main 
+           - main  
 
 jobs:
   run-ansible:
