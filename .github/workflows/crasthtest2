@@ -3,9 +3,9 @@ name: Deploy Ansible playbooks
 on: 
  push:
       
-    branches:
+   branches:
 
-           - main  
+         - main  
 
 jobs:
   run-ansible:
