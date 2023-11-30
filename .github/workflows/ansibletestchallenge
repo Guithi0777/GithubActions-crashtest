@@ -1,9 +1,9 @@
-
 ---
 name: Deploy Ansible playbooks
- on: 
-  push:
-      branches:
+on: 
+ push:
+      
+    branches:
 
            - main 
 
