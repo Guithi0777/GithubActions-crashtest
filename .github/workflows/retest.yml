@@ -19,4 +19,4 @@ jobs:
 
        - name: copy ansible file
          run: |
-           rsync -av -P ansible /home/student/ansible/playbook -i etc/hosts /home/student/actions-runner2/ansible/playbooks/recette.yml
+           rsync -av -P ansible /home/student/ -i etc/hosts /home/student/ansible/playbooks/recette.yml
