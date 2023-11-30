@@ -1,4 +1,3 @@
-student@guithi0777-server:~/ansible$ cat playbooks/recette.yml 
 ---
 name: Deploy Ansible playbooks
 on: 
